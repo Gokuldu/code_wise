@@ -1,0 +1,70 @@
+###
+get  http://127.0.0.1:8000/qs/
+Accept: application/json
+###
+POST  http://127.0.0.1:8000/qs/
+Content-Type: application/json
+
+    
+{
+    "Titile": "factorial of a number ",
+    "language_choice": "python",
+    "Difficulty_level": "medium",
+    "score": 18,
+    "topic": "for loop",
+    "notes": "This is simple python program to check whether th given number is palindrome   ",
+    "publishe_date": "2026-10-14T09:30:00Z",
+    "sample_input": "121",
+    "sample_output": " ",
+    "is_activate": true
+}
+###
+get http://127.0.0.1:8000/qs/1/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/qs/1/
+Content-Type:  application/json
+
+{
+
+    "Titile": "factorial of a numbers ",
+    "language_choice": "java",
+    "Difficulty_level": "medium",
+    "score": 20,
+    "topic": "for loop",
+    "notes": "This is simple python program to check whether th given number is palindrome   ",
+    "publishe_date": "2026-10-14T09:30:00Z",
+    "sample_input": "121",
+    "sample_output": "12 ",
+    "is_activate": true
+
+}
+###
+DELETE  http://127.0.0.1:8000/qs/1/
+Content-Type: application/json
+
+###
+get http://127.0.0.1:8000/submisions/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/submisions/
+Content-Type: application/json
+
+{
+    "question_id": 1,
+    "owner": "Gokul",
+    "answer": "print('Hello World')"
+}
+
+###
+GET http://127.0.0.1:8000/submisions/
+Accept: application/json
+
+
+###
+get http://127.0.0.1:8000/submisions/1
+Accept:  application/json
+
